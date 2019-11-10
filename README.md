@@ -4,15 +4,15 @@ This repository describes the report I made for a team project at a statistics c
 
 ## Objective:
 The main objective of this project is to determine whether location, time, day and PC (personal computers) have any effect on UA Wi-Fi network speed. Specifically, we tried to answer the interesting questions like:
-❖	Does location affect the UA Wi-Fi speed?
-❖	Is the speed higher in mornings or evenings?
-❖	Do the difference of days (weekdays and weekends) affect the network speed?
+1. 	Does location affect the UA Wi-Fi speed?
+1. 	Is the speed higher in mornings or evenings?
+1. 	Do the difference of days (weekdays and weekends) affect the network speed?
 
 ## UA Wi-Fi Architecture & Background: 
 The UA Wi-Fi Network is a vast and comprehensive system with many components spread across the campus. The core component of the network is comprised of 3 Cisco routers. These 3 core routers provide access to the World Wide Web for The University of Arizona. The core routers are “backed-up” by several distribution routers. In other words, when a core router fails, the distribution routers will provide the services without any network connection error. The next level down in the network infrastructure is switches. Switches serve to connect physical computers/devices to the routers and provide access to the network (a wired connection). Finally, access points connect to switches and allow for devices to connect to the network wirelessly. Our campus is said to have roughly 9400 access points on campus. 
 Coming to the device wireless network standards, IEEE 802.11 Wi-Fi standards generally refer to the standard of the network module used in the device. There are a wide range of standards ranging from 802.11A/B/G/N/AC, and UA Wi-Fi can adapt to all of these specifications
 
-<img src="UA_Wifi_Network_Architecture_image.png" width=80%>
+<img src="pictures/UA_Wifi_Network_Architecture_image.png" width=80%>
 
 ## Data collection & Methodology:
 To start the experiment, we wanted to know the overview and general functioning of UA Wi-Fi. We scheduled a meeting with the UITS team to gain an understanding of the overview of UA Wi-Fi network as well as effective methodology and experiment design. This meeting was very helpful towards our experiment and data collection strategy. Based on their suggestions, we were adopted a network speed checker tool called iperf (https://iperf.fr/iperf-download.php) with which we were able to measure the absolute speed of the network. By using this software, we were able to successfully set up a virtual server and client system so that we can measure the network speed by-passing the internet having uncontrollable uncertainties such as network traffic, change of path and uncertain server locations.
@@ -36,12 +36,12 @@ Lastly, the unit of response variable is Mega bits/second (Mbit/sec).
 ## Experiment 1 Results and discussions:
 
 The result and discussion of Experiment 1 is depicted in detail in the submitted report:
-
+https://github.com/kensaku-okada/STAT571B_Project_Statistical_Analysis_of_UA_Wi-Fi_Network_Speed/blob/master/documents/STAT571B-FinalReport2-2.docx
 
 ## Experiment 2 Results and discussions:
 
 The result and discussion of Experiment 1 is depicted in detail in the submitted report:
-
+https://github.com/kensaku-okada/STAT571B_Project_Statistical_Analysis_of_UA_Wi-Fi_Network_Speed/blob/master/documents/STAT571B-FinalReport2-2.docx
 
 ## Conclusion:
 In concluding our experimental statistical analysis of UA Wi-Fi network speed, it can be said that all interactions of treatment factors and 3 of 4 actual treatment factors (Location, Day, and types of computers) were statistically significant. The only insignificant treatment factor was Time. Among the 3 levels for ‘Location’, the Main Library provided the overall slowest network speed, while Forbes basement provided readings slightly greater than that of Shantz 440. Overall, ‘Time’ did not have much influence on network speed; “Day” was found to be statistically significant but did not seem to be so influential as the Location, types of computers and the other interactions.
@@ -51,11 +51,5 @@ Through this experiment a greater understanding of the UA Wi-Fi network infrastr
 ## SAS code
 
 The SAS code I wrote for this project is available at:
-
-
-
-
-
-
-
+https://github.com/kensaku-okada/STAT571B_Project_Statistical_Analysis_of_UA_Wi-Fi_Network_Speed/blob/master/src/ProjectAnalysis.sas
 

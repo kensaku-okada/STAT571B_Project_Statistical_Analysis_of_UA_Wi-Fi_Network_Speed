@@ -1,0 +1,9 @@
+	ipconfig
+	iperf -h
+	Iperf -c “IP address of the server mode pc” 
+	Iperf -s “IP address of the server mode pc” 
+	Iperf -c “IP address of the server mode pc” -t -5  -> measure the speed for 5 secs 
+	Iperf -s “IP address of the server mode pc” -u -> check the UDC network speed 
+	Iperf -c “IP address of the server mode pc” -u -> check the UDC network speed 
+
+	cd C:\Users\kensaku_lenovo\Dropbox\universityOfArizona\STAT571BDesignOfExperiments\project\iperf-3.1.3-win64\iperf-3.1.3-win64
